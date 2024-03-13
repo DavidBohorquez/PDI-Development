@@ -1,0 +1,54 @@
+<mat-toolbar class="pdi-color navbar">
+    <mat-toolbar-row *ngIf="!small">
+        <div routerLink="" class="bar-container">
+            <img src="./assets/img/Escudo_UD.png" alt="Escudo_UD" class="bar-image">
+            <img src="./assets/img/PDI.png" alt="PDI_img" class="bar-image">
+        </div>
+        <div class="example-spacer">
+            <h4>App Interactiva</h4>
+            <a routerLink="/inicio/moduloConsejerias">
+                <h4 class="spacer">Modulo consejerias</h4>
+            </a>
+        </div>
+        <button mat-icon-button routerLink="">
+            <mat-icon>home</mat-icon>
+        </button>
+        <button mat-icon-button>
+            <mat-icon>notifications</mat-icon>
+        </button>
+        <button mat-icon-button>
+            <mat-icon>person</mat-icon>
+        </button>
+        <button mat-icon-button routerLink="/login">
+            <mat-icon>logout</mat-icon>
+        </button>
+    </mat-toolbar-row>
+
+    <mat-toolbar-row *ngIf="small">
+        <p class="title">App Interactiva</p> 
+    </mat-toolbar-row>
+
+    <mat-toolbar-row *ngIf="small">
+        <button mat-icon-button (click)="sidenav.toggle()">
+            <mat-icon *ngIf="!sidenav.opened">
+                menu
+            </mat-icon>
+            <mat-icon *ngIf="sidenav.opened">
+                close
+            </mat-icon>
+        </button>
+        <button mat-icon-button routerLink="">
+            <mat-icon>home</mat-icon>
+        </button>
+        <button mat-icon-button>
+            <mat-icon>notifications</mat-icon>
+        </button>
+        <button mat-icon-button>
+            <mat-icon>person</mat-icon>
+        </button>
+        <button mat-icon-button routerLink="/login">
+            <mat-icon>logout</mat-icon>
+        </button>
+    </mat-toolbar-row>
+
+</mat-toolbar>

@@ -1,0 +1,23 @@
+
+.contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: #9F9F9F;
+    margin: 5%;
+    overflow: hidden;
+}
+
+h3{
+    color: #333333;
+    font-size: 18px;
+}
+
+
+/*configuracion responsiva*/
+@media (max-width: 600px) {
+
+
+}
+  

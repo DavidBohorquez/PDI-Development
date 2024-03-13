@@ -1,0 +1,10 @@
+[
+    {
+        "codigo":"20172020119",
+        "nombre":"Jordy Esteban",
+        "apellido":"Pineda Velandia",
+        "proyecto":"Ing. Sistemas",
+        "Consejero":"codigo_consejero",
+        "Eventos":["1","2","3"]
+    }
+]

@@ -1,0 +1,44 @@
+.spacer{
+  margin-left: 30px;
+}
+
+.navbar {
+  height: 60px;
+}
+
+.bar-container {
+  height: 50px;
+  margin-right: 30px;
+}
+
+.bar-image {
+  height: 100%;
+}
+
+.example-spacer {
+  display: flex;
+  width: 70%;
+  justify-content: left;
+  padding-right: 10px;
+}
+
+.title {
+  font-weight: bold;
+  justify-content: center;
+  margin: 0;
+}
+
+.pdi-color {
+  background-color: #E17A35;
+  color: white;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    height: 90px;
+  }
+
+  .sidenav-container {
+    top: 90px;
+  }
+}

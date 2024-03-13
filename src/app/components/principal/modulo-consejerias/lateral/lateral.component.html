@@ -1,0 +1,27 @@
+
+<mat-drawer-container class="example-container" >
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+          
+            <div class="cont">
+              <button mat-icon-button class="sideBarButton1"
+                [routerLink]="'/inicio'"
+                (click)="drawer.toggle()">            
+                    <mat-icon>assignment_ind</mat-icon>
+            </button>
+            
+            <button mat-icon-button class="sideBarButton1"
+                [routerLink]="'/registro'"
+                (click)="drawer.toggle()">
+                <mat-icon>assignment</mat-icon>
+            </button>
+            </div>
+        
+    </mat-drawer>
+  
+    <div class="example-sidenav-content">
+      <button type="button" mat-icon-button aria-label="Desplegable" (click)="drawer.toggle()">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    
+  </mat-drawer-container>

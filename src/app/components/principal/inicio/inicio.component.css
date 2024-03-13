@@ -1,0 +1,38 @@
+/*Organizacion del contenido*/
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 50px;
+  width: 95.9%;
+  background-color: rgb(255, 255, 255);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  padding: 10px;
+  margin: 0;
+}
+
+.info_basica {
+  grid-column: 1 / 4;
+}
+
+.eventos{
+  
+}
+
+
+/*configuracion responsiva*/
+@media (max-width: 600px) {
+  .contenedor {
+    margin-left: 0px;
+
+  }
+  .info_basica {
+    grid-column: 1 / 5;
+  }
+  .eventos{
+    grid-column: 1 / 5;
+  }
+}
